@@ -1,0 +1,13 @@
+<html> 
+<!--To serve this javascript code in a flask app, link it with a HTML file (index.html in this case) in the template folder using this line of code in the head section --->
+<!--<script type = "text/javascript" src = "{{ url_for('static', filename = 'hello.js') }}" ></script>!>-->
+<head> 
+    <script type = "text/javascript"
+        src = "{{ url_for('static', filename = 'hello.js') }}" ></script> 
+</head> 
+    
+<body> 
+    <input type = "button" onclick = "sayHello()" value = "Say Hello" /> 
+</body> 
+    
+</html>
