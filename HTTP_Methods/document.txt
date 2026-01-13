@@ -1,0 +1,5 @@
+GET: to request data from the server.
+POST: to submit data to be processed to the server.
+PUT: replaces the entire resource with new data. If it doesn’t exist, a new one is created.
+PATCH: updates only specific parts of a resource without replacing the whole thing.
+DELETE: deletes the data on the server at a specified location.

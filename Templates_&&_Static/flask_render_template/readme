@@ -1,0 +1,14 @@
+python -m venv venv
+source venv/bin/activate
+
+Flask - Jinja Template Inheritance
+Instead of reusing full templates, we can inherit them using Jinja blocks. Here's how:
+
+Create a block in a template using {% block <name> %} ... {% endblock %}.
+This allows other templates to extend it and replace the block content.
+In index.html, define a block using {% block body %} ... {% endblock %}.
+Everything above {% block body %} stays the same in all templates, while content inside the block can change.
+The block ends with {% endblock %}, allowing templates to override only specific sections.
+
+Flask templates also support if-else conditions, allowing for dynamic content
+The if-else syntax is similar to Python but enclosed in {% %}. It follows a simple if-elif-else structure to generate HTML based on the value
