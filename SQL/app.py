@@ -43,7 +43,7 @@ def create_app(test_config=None):
 
     app.cli.add_command(init_db_command)
 
-    @app.route('/', methods=['GET', 'POST'])
+    @app.route('/', methods=['GET', 'POST']) 
     def home():
         if request.method == 'POST':
             db.session.add(Event(date=datetime.datetime.now().__str__(), event=request.form['eventBox']))
