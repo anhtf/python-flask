@@ -7,3 +7,4 @@ db-sqlite3
 flask_login # manager user sessions and authentication
 werkzeug    # secure password hashing anf verification
 Flask-RESTful
+gunicorn 
