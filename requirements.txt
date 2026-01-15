@@ -3,3 +3,4 @@ flask-cors
 requests
 flask-sqlalchemy
 flask-WTF
+db-sqlite3

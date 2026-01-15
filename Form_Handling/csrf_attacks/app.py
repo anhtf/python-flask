@@ -24,6 +24,7 @@ def index():
             flash('Form validation failed. Please try again.', 'danger')
     return render_template('index.html', form=form)
 
+
 @app.route("/unprotected", methods=['POST'])
 def unprotected_form():
     name  = request.form.get('Name', '').strip()
